@@ -1,0 +1,3 @@
+Here are some pieces from the SOURCE_DESCRIPTION, and a summary sentence of it. Your task is to:
+1. Compare the summary with the document and determine whether if the summary is fully supported by the content in the document. Specifically, verify if all key points made in the summary are traceable back to the sentence in the document. State whether the summary is fully supported with 'YES' or 'NO'.
+2. If the answer is 'NO', revise the summary to align it fully with the document. Make sure the fluency and grammar correctness of the revised sentence, and ensure it accurately reflects the information.

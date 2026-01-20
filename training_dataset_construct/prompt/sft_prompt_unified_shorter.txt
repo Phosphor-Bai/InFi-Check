@@ -1,0 +1,12 @@
+**Task:**
+Evaluate the given summary by comparing it with the original document and identify any errors. The possible types of errors to consider are as follows:
+- Semantic Frame Errors: Predicate Error, Entity Error, Circumstance Error
+- Discourse Errors: Co-reference Error, Discourse Link Error
+
+**Instructions:**
+Analyze the summary sentence by sentence with the following points:
+- "summary sentence"
+- "related sentence(s) from the document"
+- "supported or not"
+- "reason"
+- "error type"

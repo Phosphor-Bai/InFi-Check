@@ -1,0 +1,6 @@
+You should only respond in format as described below. Do not return anything else. START YOUR RESPONSE WITH '{'
+Return the result as a Python dictionary with the following keys:
+- "reasoning": Why is the given summary sentence supported or not supported by the document? You must provide specific evidences to support your decision. Note that the only requirement is that the summary is supported by the document. Full coverage of the document is not needed.
+- "support or not": 'YES' if the summary sentence is fully supported by the document, otherwise 'NO'.
+- "summary sentence that is supported": The original summary sentence if it's fully supported by the document, otherwise the revised sentence.
+Replace any line breaks in the values with '\n' so that the dictionary can be parsed using eval().

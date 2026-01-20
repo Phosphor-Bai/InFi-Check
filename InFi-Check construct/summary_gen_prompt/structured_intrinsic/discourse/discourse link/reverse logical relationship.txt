@@ -1,0 +1,16 @@
+Error Type: Intrinsic/Discourse/Discourse Link
+Method: Reverse Logical Relationship
+Few Shot: No
+Instruction: 
+1. Select two events in the document that are either temporally ordered or causally related.
+2. Reverse the temporal or causal relationship between the two selected events, while keeping the rest of the text unchanged.
+3. Rewrite the sentence in the summary that is related with the two events with the reversed one. You can add more detail to make sure the fake information occur straightly in the new summary, so the summary cannot be fully supported by the document.
+Format:
+- "original text in summary": The two original events from the document that are temporally ordered or causally related.
+- "chosen element": The two events with their original temporal or causal relationship, should be a string.
+- "modification explanation": Description of the modification.
+- "modified element": The new relationship between the two events after reversal.
+- "modified text": The full sentence after the modification.
+- "explanation": A clear explanation of how the meaning of the original text has been altered.
+- "full text of modified summary": The full text of the modified summary. Split the summary by sentence into a list.
+- "wrong information": Point out the specific wrong information introduced in the summary after the modification.

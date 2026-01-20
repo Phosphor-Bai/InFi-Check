@@ -1,0 +1,5 @@
+The following part is not supported by the origin document:
+- Location: The error occurs in the following sentence: <modified text>. Specifically, <modified element>.
+- Explanation: <wrong information>
+- Correction: <original text in summary>
+- Error Type: <error type>

@@ -1,0 +1,15 @@
+Error Type: Intrinsic/Semantic Frame/Entity
+Method: Swapping entities
+Few Shot: No
+Instruction: 
+1. Select a random entity in the summary.
+2. Replace the selected entity in the summary with another entity in the document.
+Format:
+- "original text in summary": The original sentence with the selected entity, and the sentence with the entity for replacement.
+- "chosen element": The chosen entity in original text.
+- "modification explanation": Description of the modification.
+- "modified element": The new entity used to replace the chosen entity.
+- "modified text": The full sentence after the modification.
+- "explanation": A clear explanation of how the meaning of the original text has been altered.
+- "full text of modified summary": The full text of the modified summary. Split the summary by sentence into a list.
+- "wrong information": Point out the specific wrong information introduced in the summary after the modification.

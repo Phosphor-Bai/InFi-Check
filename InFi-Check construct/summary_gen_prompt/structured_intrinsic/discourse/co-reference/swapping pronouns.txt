@@ -1,0 +1,36 @@
+Error Type: Intrinsic/Discourse/Co-reference
+Method: Swapping Pronouns
+Few Shot: Yes
+Instruction: 
+Select a sentence in the summary and choose between two options:
+(1) Replacing a pronoun in the passage with another pronoun of the same type, such as replacing 'he' to 'she', or replace 'your' to 'its'.
+(2) Change a entity to a pronoun, then replace the pronoun with another pronoun of the same type, for example, change 'John' to 'he', then change 'he' to 'she'.
+Do not change any other word besides the replaced pronoun.
+Format:
+- "original text in summary": The original sentence or sentences containing the selected pronoun or entity from the summary.
+- "chosen element": The chosen pronoun or entity in the original text.
+- "modification explanation": Description of the modification.
+- "modified element": The new pronoun used to replace the chosen pronoun or entity.
+- "modified text": The full sentence after the modification.
+- "explanation": A clear explanation of how the meaning of the original text has been altered.
+- "full text of modified summary": The full text of the modified summary. Split the summary by sentence into a list.
+- "wrong information": Point out the specific wrong information introduced in the summary after the modification.
+Example Document:
+The former police chief of the school police force in Uvalde, Tex., has been indicted in connection with the botched response to the 2022 shooting that left 19 students and two teachers dead at Robb Elementary.
+Uvalde County jail officials confirmed that Pedro “Pete” Arredondo was booked at the facility on 10 felony counts of abandoning or endangering a child shortly before 5 p.m. local time on Thursday. Arredondo’s bond was set at $100,000, or $10,000 per charge. He posted bail shortly after being booked.
+Local media reported a former officer, Adrian Gonzales, was also indicted. The charges were first reported by the San Antonio Express-News. District Attorney Christina Mitchell did not return requests for comment.
+The officers are the first to face criminal charges in a shooting that sparked outrage over both the violence of the 18-year-old gunman and law enforcement’s lengthy delay in entering the classroom and killing him. Texas leaders initially praised the law enforcement response but later acknowledged officers had waited 77 minutes to confront the gunman.
+Legal experts said the charges appear to mark an unprecedented application of the child-endangerment statute and noted that the 10 counts are probably in reference to the 10 children who survived the deadly attack that day by pretending to be dead or hiding among the dead.
+Example Summary:
+Pedro “Pete” Arredondo, the former Uvalde, Texas school police chief, has been indicted for his inadequate response to the 2022 Robb Elementary School shooting, which left 19 students and two teachers dead. His bond was set at $100,000, and he posted bail shortly after. Former officer Adrian Gonzales was also indicted. These are the first criminal charges in the case, highlighting law enforcement's delayed action during the incident.
+Example Output:
+{
+	"original text in summary": "Former officer Adrian Gonzales was also indicted.",
+	"chosen element": "Former officer Adrian Gonzales",
+	"modification explanation": "The entity 'Former officer Adrian Gonzales' was replaced with the pronoun It', resulting in the loss of specificity and incorrect pronoun usage.",
+	"modified element": "It",
+	"modified text":"It was also indicted.",
+	"explanation": "The meaning of the original text has been altered by replacing the proper noun 'Adrian Gonzales' with the pronoun 'It', which is not appropriate for referring to a person, causing confusion and making the sentence factually incorrect.",
+	"full text of modified summary": ["Pedro 'Pete' Arredondo, the former Uvalde, Texas school police chief, has been indicted on 10 felony counts of child endangerment for his inadequate response to the 2022 Robb Elementary School shooting, which left 19 students and two teachers dead.", "His bond was set at $100,000, and he posted bail shortly after.", "It was also indicted.", "These are the first criminal charges in the case, highlighting law enforcement's delayed action during the incident."],
+	"wrong information": "The incorrect pronoun 'It' was used to refer to Former officer Adrian Gonzales, falsely suggesting that an inanimate object or entity was indicted instead of the actual person."
+}

@@ -1,0 +1,4 @@
+You should only respond in format as described below. Do not return anything else. START YOUR RESPONSE WITH '['
+Return the result as a Python list of dictionaries, where each dictionary has the following keys:
+"summary sentence": The sentence from the summary.
+"sentences from the document": A Python list of sentences from the document. Ensure that the sentences are in the same order as they appear in the original document. These sentences should be the exact supporting sentences from the document, or related sentences if the summary sentence is not fully supported.

@@ -1,0 +1,15 @@
+Error Type: Intrinsic/Semantic Frame/Predicate
+Method: Swapping relation maskings
+Few Shot: No
+Instruction: 
+1. Select a dependency relation in the summary.
+2. Replace the predicate with a wrong predicate, making the meaning of the sentence differs greatly from the origin one. Modification to the sentence containing the dependency relation is allowed for consistency.
+Format:
+- "original text in summary": The original sentence or sentences with the selected dependency relation.
+- "chosen element": The chosen predicate in original text.
+- "modification explanation": Description of the modification.
+- "modified element": The new predicate used to replace the chosen predicate.
+- "modified text": The full sentence after the modification.
+- "explanation": A clear explanation of how the meaning of the original text has been altered.
+- "full text of modified summary": The full text of the modified summary. Split the summary by sentence into a list.
+- "wrong information": Point out the specific wrong information introduced in the summary after the modification.

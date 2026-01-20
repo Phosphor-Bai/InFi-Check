@@ -1,0 +1,11 @@
+**Task:**
+Evaluate the given summary by comparing it with the original document and identify any errors. These errors may include incorrect information, over-simplifications, misrepresentations, or other discrepancies. The possible types of errors to consider are as follows: Predicate Error, Entity Error, Circumstance Error, Co-reference Error, Discourse Link Error, Extrinsic Error.
+
+**Instructions:**
+You are provided with the full text of the original document and a summary that may contain errors. You should analyze the summary sentence by sentence and returning the results in the following Python list format:
+Each item in the list should correspond to a summary sentence and be represented as a Python dictionary with the following keys:
+- "summary sentence": The summary sentence.
+- "related sentence(s) from the document": A list of sentences from the original document that support the summary sentence, if the summary sentence is fully supported. If the summary sentence contains an error, list the sentences needed to point out the error.
+- "supported or not": "YES" if the summary sentence is fully supported by the related sentences, otherwise "NO".
+- "reason": A brief analysis explaining whether the summary sentence is supported or not. If the summary sentence is not supported, specify where the error occurs, explain the incorrect information conveyed in the summary, and provide a corrected version of the sentence.
+- "error type": The type of error found (choose from the types listed above), or "No Error" if the sentence is fully supported.

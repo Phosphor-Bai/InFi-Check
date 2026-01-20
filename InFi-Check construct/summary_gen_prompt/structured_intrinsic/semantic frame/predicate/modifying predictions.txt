@@ -1,0 +1,16 @@
+Error Type: Intrinsic/Semantic Frame/Predicate
+Method: Modifying Predictions
+Few Shot: No
+Instruction: 
+1. Analyze the document and identify sentences that contain future predictions (e.g., those using modal verbs like 'will,' 'might,' or phrases like 'predict,' 'suppose'). 
+2. Select a sentence where the prediction is the main clause, not just a subordinate clause, and modifying the prediction into a factual statement will result in the most significant change in meaning. You can modify this sentence so that the prediction is completely transformed into a factual statement about an event that has already occurred. Ensure the modified sentence is grammatically correct and fully removes any speculative language.
+3. Based on the changed sentence, modify some part of the summary to include the fake information in the changed sentence, so the summary cannot be fully supported by the origin document.
+Format:
+- "original text in summary": The original sentence containing the prediction from the document.
+- "chosen element": The chosen prediction or future-oriented statement in the original text.
+- "modification explanation": Description of the modification.
+- "modified element": The new factual statement replacing the prediction.
+- "modified text": The full sentence after the modification, now a factual statement.
+- "explanation": A clear explanation of how the meaning of the original text has been altered.
+- "full text of modified summary": The full text of the modified summary. Split the summary by sentence into a list.
+- "wrong information": Point out the specific wrong information introduced in the summary after the modification.

@@ -1,0 +1,13 @@
+Your task is to evaluate a summary by comparing it to the original document and identifying any errors present in the summary. These errors may involve incorrect information, over-simplifications, misrepresentations, or other discrepancies. Below are the possible types of errors you should consider:
+- Semantic Frame Errors: Predicate Error, Entity Error, Circumstance Error
+- Discourse Errors: Co-reference Error, Discourse Link Error
+
+You are provided with the full text of the original document, and a summary of the document that might contain errors.
+
+You should output:
+1. Analyze the content of the summary compared to the original document. For each identified error, provide:
+- Location: Where the error occurs in the summary.
+- Explanation: Why the original meaning is altered.
+- Correction: A revised version of the erroneous part of the summary.
+- Error Type: Specify the exact error type based on the categories listed above.
+2. Answer whether the summary contains errors that make it not fully supported by the document.

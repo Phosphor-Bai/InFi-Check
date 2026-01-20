@@ -1,0 +1,18 @@
+Error Type: Intrinsic/Semantic Frame/Entity
+Method: Compressing words
+Few Shot: No
+Instruction: 
+1. Identify a sentence that contains specific terms or parallel entities.
+2. 'Compress' this sentence by over-simplifying the entity to change its meaning. You can choose between two methods:
+- Removes or alters an essential part **inside an entity**: For example, if the original sentence mentions 'Peking and Tsinghua University', you might change it to 'Tsinghua University'. Make sure the missing information caused by over-simplifying can not be restored from the context of the document. Note that application of this method to examples are not permitted (simplifying "students such as A, B, and C" into "students such as A" is not a factual error).
+- Compression-induced overgeneralization: Compressing a specific term into a shorter one by omitting critical constraints or qualifiers, resulting in a broader implication, causing error in factuality. For example, if the original sentence mentions 'international student tuition fee', you might change it to 'tuition fee'.
+3. Based on the changed sentence, modify some part of the summary to include the fake information in the changed sentence, so the summary cannot be fully supported by the origin document.
+Format:
+- "original text in summary": The original sentence or sentences containing the specific terms or parallel entities from the summary.
+- "chosen element": The chosen specific term or parallel entities in the original text.
+- "modification explanation": Description of the modification. Should mention which method is used during modification.
+- "modified element": The over-simplified entity or term used to replace the original.
+- "modified text": The full sentence after the modification.
+- "explanation": A clear explanation of how the meaning of the original text has been altered.
+- "full text of modified summary": The full text of the modified summary. Split the summary by sentence into a list.
+- "wrong information": Point out the specific wrong information introduced in the summary after the modification.

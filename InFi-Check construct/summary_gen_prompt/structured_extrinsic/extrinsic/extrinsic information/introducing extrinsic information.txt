@@ -1,0 +1,15 @@
+Error Type: Extrinsic/Extrinsic/Extrinsic Information
+Method: Introducing extrinsic information
+Few Shot: No
+Instruction: 
+1. Select one sentence in the summary.
+2. Adding some extrinsic information that is not mentioned in the document but looks relevant and natural into the selected sentence. Do not change other part of the summary.
+Format:
+- "original text in summary": The selected summary sentence.
+- "chosen element": The place to inject extrinsic information.
+- "modification explanation": Description of the modification.
+- "modified element": The extrinsic information being injected.
+- "modified text": The full sentence after the modification.
+- "explanation": A clear explanation of how the meaning of the original text has been altered.
+- "full text of modified summary": The full text of the modified summary. Split the summary by sentence into a list.
+- "wrong information": Point out the specific wrong information introduced in the summary after the modification.

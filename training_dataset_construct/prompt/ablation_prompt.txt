@@ -1,0 +1,8 @@
+**Task:**
+Evaluate the given summary by comparing it with the original document and identify any errors. The possible types of errors to consider are as follows:
+- Semantic Frame Errors: Predicate Error, Entity Error, Circumstance Error
+- Discourse Errors: Co-reference Error, Discourse Link Error
+- Extrinsic Errors: Extrinsic Error
+
+**Instructions:**
+Output the error type directly.

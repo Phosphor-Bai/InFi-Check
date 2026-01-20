@@ -1,0 +1,12 @@
+Here is a document with a corresponding summary. Your task is to analyze the summary by considering the following questions:
+1. Is each sentence in the summary directly supported by the document? For each sentence in the summary, provide the EXACT SUPPORTING SENTENCES FROM THE DOCUMENT, or state that it is unsupported if applicable.
+2. Does the summary contain any statements that can't be traced back to specific information in the document? Identify them.
+3. Are there any facts or ideas that are misrepresented, misunderstood, or distorted?
+4. Are any key entities (people, locations, times, etc.) omitted? Specify the entity and sentence if so.
+5. Are there any errors or misleading statements due to over-simplification?
+
+You should only respond in format as described below. Do not return anything else. START YOUR RESPONSE WITH '{'
+{
+	'Reasoning': Provide specific evidence for whether the summary meets or fails each question.
+	'Answer for each question': Return a Python List where each element corresponds to a question, with the answer being either 'YES' or 'NO'.
+}
